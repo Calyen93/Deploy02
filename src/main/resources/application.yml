@@ -3,12 +3,16 @@ server:
 
 ---
 spring:
-  profiles: prod
+  config:
+    activate:
+      on-profiles: prod
 server:
   port: 7070
 
 ---
 spring:
-  profiles: test
+  config:
+    activate:
+      on-profiles: test
 server:
   port: 4000
